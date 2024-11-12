@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengendalian Hipertensi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="logo">
+                <i class="fas fa-heartbeat"></i>
+                HealthCare
+            </a>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="materi.html"><i class="fas fa-book-medical"></i> Materi</a>
+                <a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+        <section id="materi">
+            <div class="card">
+                <h1>PENGENDALIAN HIPERTENSI</h1>
+                
+                <h2>A. Pengertian Hipertensi</h2>
+                <p>Hipertensi atau tekanan darah tinggi adalah kondisi medis dimana tekanan darah dalam arteri meningkat secara abnormal. Pengukuran tekanan darah terdiri dari dua komponen:</p>
+                <ul>
+                    <li><i class="fas fa-arrow-up"></i> Sistolik (angka atas): Menunjukkan tekanan dalam arteri saat jantung berkontraksi</li>
+                    <li><i class="fas fa-arrow-down"></i> Diastolik (angka bawah): Menunjukkan tekanan dalam arteri saat jantung beristirahat</li>
+                </ul>
+
+                <h2>B. Faktor Risiko Hipertensi</h2>
+                <h3>1. Faktor Tidak Dapat Diubah</h3>
+                <ul>
+                    <li><i class="fas fa-calendar-alt"></i> Usia: Risiko meningkat seiring bertambahnya usia</li>
+                    <li><i class="fas fa-venus-mars"></i> Jenis Kelamin: Pria lebih berisiko di usia muda dibanding wanita</li>
+                    <li><i class="fas fa-users"></i> Riwayat Keluarga: Memiliki keluarga dengan hipertensi meningkatkan risiko</li>
+                </ul>
+
+                <h3>2. Faktor Dapat Diubah</h3>
+                <ul>
+                    <li><i class="fas fa-weight"></i> Obesitas: Kelebihan berat badan meningkatkan beban kerja jantung</li>
+                    <li><i class="fas fa-smoking"></i> Merokok: Merusak dinding pembuluh darah</li>
+                    <li><i class="fas fa-wine-bottle"></i> Konsumsi Alkohol Berlebih: Meningkatkan tekanan darah</li>
+                    <li><i class="fas fa-brain"></i> Stres: Stres kronis berkontribusi pada peningkatan tekanan darah</li>
+                    <li><i class="fas fa-utensils"></i> Pola Makan Tidak Sehat: Diet tinggi garam, lemak jenuh, dan rendah serat</li>
+                </ul>
+
+                <h2>C. Tanda dan Gejala Hipertensi</h2>
+                <ul>
+                    <li><i class="fas fa-head-side-virus"></i> Sakit kepala, terutama di bagian belakang</li>
+                    <li><i class="fas fa-dizzy"></i> Pusing atau vertigo</li>
+                    <li><i class="fas fa-heartbeat"></i> Jantung berdebar</li>
+                    <li><i class="fas fa-bed"></i> Mudah lelah</li>
+                    <li><i class="fas fa-eye"></i> Penglihatan kabur</li>
+                    <li><i class="fas fa-tint"></i> Mimisan</li>
+                </ul>
+
+                <h2>D. Penatalaksanaan Hipertensi</h2>
+                <h3>1. Penatalaksanaan Farmakologis</h3>
+                <ul>
+                    <li><i class="fas fa-pills"></i> Diuretik: Membantu mengeluarkan kelebihan garam dan air</li>
+                    <li><i class="fas fa-capsules"></i> ACE Inhibitors: Mengurangi produksi hormon vasokonstriksi</li>
+                    <li><i class="fas fa-tablets"></i> Calcium Channel Blockers: Mengendurkan pembuluh darah</li>
+                </ul>
+
+                <h3>2. Penatalaksanaan Non-Farmakologis</h3>
+                <ul>
+                    <li><i class="fas fa-apple-alt"></i> Pola Makan Sehat</li>
+                    <li><i class="fas fa-running"></i> Olahraga Teratur</li>
+                    <li><i class="fas fa-balance-scale"></i> Pengendalian Berat Badan</li>
+                    <li><i class="fas fa-ban"></i> Menghindari Faktor Risiko</li>
+                    <li><i class="fas fa-peace"></i> Manajemen Stres</li>
+                </ul>
+            </div>
+        </section>
+
+      
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const navItems = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('.content section');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+    </script>
+</body>
+</html>

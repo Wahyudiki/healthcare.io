@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengendalian Hipertensi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="#" class="logo">
+                <i class="fas fa-heartbeat"></i>
+                HealthCare
+            </a>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="materi.html"><i class="fas fa-book-medical"></i> Materi</a>
+                <a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <section id="home" class="active">
+            <div class="hero">
+                <h1>Selamat Datang di HealthCare</h1>
+                <p>Menjadi Partner Terpercaya untuk Hidup Sehat Anda</p>
+            </div>
+            <div class="card">
+                <h2>Tentang Kami</h2>
+                <p>Website ini berisikan tentang materi-materi tentang kesehatan yang dimana dapat bermanfaat bagi media masa agar dapat memempermudah dalam mencari informasi terkait kesehatan dengan adanya website ini.</p>
+            </div>
+        </section>
+        <div class="biodata">
+            <h2>Biodata Website</h2>
+            <div class="biodata-item">
+                <strong>Nama Website:</strong> Website ini bernama HealthCare
+            </div>
+            <div class="biodata-item">
+                <strong>Tanggal Dibuat:</strong> 10 November 2024
+            </div>
+            <div class="biodata-item">
+                <strong>Kategori:</strong> Tugas
+            </div>
+            <div class="biodata-item">
+                <strong>Platform:</strong> WordPress
+            </div>
+            <div class="biodata-item" style="margin-top: 1rem;">
+                
+            </div>
+        </div>
+    
+        <div class="fitur">
+            <h2>Fitur</h2>
+            <div class="fitur-container">
+                <div class="fitur-item">
+                    <h3>Home</h3>
+                    <p>Di menu ini berisikan tentang biodata website</p>
+                </div>
+                <div class="fitur-item">
+                    <h3>Materi</h3>
+                    <p>Di menu ini berisikan tentang materi website</p>
+                </div>
+                <div class="fitur-item">
+                    <h3>Kontak</h3>
+                    <p>Di menu ini berisikan tentang kontak person</p>
+                </div>
+            </div>
+        </div>
+
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        const navItems = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('.content section');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+    </script>
+</body>
+</html>
